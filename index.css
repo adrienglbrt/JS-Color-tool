@@ -22,13 +22,14 @@ body {
 
 .title {
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
     .title {
         font-size: 3rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -82,16 +83,23 @@ body {
 }
 
 .output-section {
-    margin-top: 4rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
     .output-section {
         flex-direction: row;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .output-section {
+        width: calc(1024px - 8rem);
     }
 }
 
@@ -104,6 +112,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .output-box {
-        width: 20rem;
+        width: 45%;
     }
 }
+
