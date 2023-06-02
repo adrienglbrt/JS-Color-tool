@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">JS Color tool</h1>
+            <div class="input-section">
+                <label for="hex-code-input" class="input-label">Enter your color hex code</label>
+                <input type="text" name="hex-code-input" id="hex-code-input" placeholder="#000000" class="text-input">
+            </div>
+            <div class="input-section">
+                <label for="hex-alteration-slider" class="input-label">Pick your desired alteration</label>
+                <input type="range" name="hex-alteration-slider" id="hex-alteration-slider" min="0" max="100" value="0" class="slider-input">
+            </div>
+            <div class="output-section">
+                <div class="output-box">
+                    <p class="output-box-label">Input color</p>
+                </div>
+                <div class="output-box">
+                    <p class="output-box-label">Altered color</p>
+                </div>
+            </div>
+        </div>
+        <script src="index.pack.js"></script>
+    </body>
+</html>
