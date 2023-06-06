@@ -15,14 +15,17 @@
             </div>
             <div class="input-section">
                 <label for="hex-alteration-slider" class="input-label">Pick your desired alteration</label>
-                <input type="range" name="hex-alteration-slider" id="hex-alteration-slider" min="0" max="100" value="0" class="slider-input">
+                <div class="slider-combo">
+                    <input type="range" name="hex-alteration-slider" id="hex-alteration-slider" min="0" max="100" value="0" class="slider-input">
+                    <p class="slider-percentage" id="hex-alteration-slider-percentage">0%</p>
+                </div>
             </div>
             <div class="output-section">
                 <div class="color-box" id="input-box">
                     <p class="color-box-label">Input color</p>
                 </div>
-                <div class="color-box">
-                    <p class="color-box-label" id="output-box">Altered color</p>
+                <div class="color-box" id="output-box">
+                    <p class="color-box-label" id="output-box-label">Altered color</p>
                 </div>
             </div>
         </div>

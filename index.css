@@ -49,6 +49,11 @@ body {
     padding: 0.5rem;
 }
 
+.slider-combo {
+    display: flex;
+    align-items: center;
+}
+
 .slider-input {
     background: transparent;
     appearance: none;
@@ -80,6 +85,10 @@ body {
     height: 12px;
     width: 12px;
     background-color: #0f0f0f;
+}
+
+.slider-percentage {
+    padding-left: 1rem;
 }
 
 .output-section {
