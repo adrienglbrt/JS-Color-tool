@@ -5,8 +5,11 @@ const outputColor = document.getElementById("output-box");
 const outputColorLabel = document.getElementById("output-box-label")
 const slider = document.getElementById("hex-alteration-slider");
 const sliderPercentage = document.getElementById("hex-alteration-slider-percentage");
+const toggleLighten = document.getElementById("toggle-lighten");
+const toggleDarken = document.getElementById("toggle-darken");
+const toggleButton = document.getElementById("toggle-button");
 
-// Validate hex input - To be updated to control the characters are in between 0-9 and a - f
+// Validate hex input - To be updated to control the characters are in between 0-9 and a-f
 const isValidHex = (hex) => {
     if(!hex) return false;
     
@@ -90,4 +93,18 @@ slider.addEventListener("input", () => {
 
     outputColor.style.backgroundColor = alteredHex;
     outputColorLabel.textContent = `Altered Text: ${alteredHex}`;
+})
+
+//Toggle button
+toggleButton.addEventListener("click", () => {
+    if (toggleLighten.classList.contains("toggle-label-deselected")) {
+        toggleLighten.classList.remove("toggle-label-deselected");
+        toggleDarken.classList.add("toggle-label-deselected");
+        toggleButton.classList.remove("toggled");
+    }
+    else {
+        toggleLighten.classList.add("toggle-label-deselected");
+        toggleDarken.classList.remove("toggle-label-deselected");
+        toggleButton.classList.add("toggled");
+    }
 })
