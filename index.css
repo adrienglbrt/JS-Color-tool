@@ -33,6 +33,9 @@ body {
     }
 }
 
+/* Input section */
+
+
 .input-section {
     display: flex;
     flex-direction: column;
@@ -48,6 +51,8 @@ body {
     border: 2px solid #0f0f0f;
     padding: 0.5rem;
 }
+
+/* Slider element */
 
 .slider-combo {
     display: flex;
@@ -90,6 +95,44 @@ body {
 .slider-percentage {
     padding-left: 1rem;
 }
+
+/* Toggle elemet */
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* .toggle-label {
+    font-size: 0.8rem;
+} */
+
+.toggle-label-deselected {
+    color: #c3c3c3;
+}
+
+.toggle-button {
+    width: 3rem;
+    height: 1.5rem;
+    padding: 0.25rem;
+    background-color: #5f5f5f;
+}
+
+.toggle-inner {
+    width: 1rem;
+    height: 100%;
+    background-color: #c3c3c3;
+    transition: all 0.2s;
+}
+
+.toggle-button.toggled > .toggle-inner {
+    transform: translate(1.5rem,0);
+    background-color: #191919;
+}
+
+
+/* Output section */
 
 .output-section {
     margin-top: 3rem;
