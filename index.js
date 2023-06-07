@@ -25,6 +25,7 @@ hexInput.addEventListener("keyup", () => {
     const strippedHex = hex.replace("#", "");
 
     inputColor.style.backgroundColor = "#" + strippedHex;
+    reset();
 })
 
 // Convert hex value to RGB value
@@ -110,4 +111,13 @@ toggleButton.addEventListener("click", () => {
         toggleDarken.classList.remove("toggle-label-deselected");
         toggleButton.classList.add("toggled");
     }
+    reset();
 })
+
+// Reset function
+function reset() {
+    slider.value = 0;
+    sliderPercentage.textContent = `${slider.value}%`;
+    outputColor.style.backgroundColor = hexInput.value;
+    outputColorLabel.textContent = "Altered color";
+}
