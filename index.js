@@ -89,7 +89,10 @@ slider.addEventListener("input", () => {
 
     sliderPercentage.textContent = `${slider.value}%`;
 
-    const alteredHex = alterColor(hexInput.value, slider.value);
+    // Calcute whether additive or negative addition based on toggle select
+    const valueAddition = toggleButton.classList.contains("toggled") ? -slider.value : slider.value;
+
+    const alteredHex = alterColor(hexInput.value, valueAddition);
 
     outputColor.style.backgroundColor = alteredHex;
     outputColorLabel.textContent = `Altered Text: ${alteredHex}`;
